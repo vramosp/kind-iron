@@ -135,16 +135,16 @@ sections:
       destination: ''
       action: /.netlify/functions/submission_created
       fields:
-        - type: TextFormControl
-          name: name
-          label: Name
-          placeholder: Your name
-          isRequired: true
-          width: 1/2
         - type: EmailFormControl
           name: email
           label: Email
           placeholder: Your email
+          isRequired: true
+          width: 1/2
+        - type: TextFormControl
+          name: name
+          label: Name
+          placeholder: Your name
           isRequired: true
           width: 1/2
         - type: TextFormControl
