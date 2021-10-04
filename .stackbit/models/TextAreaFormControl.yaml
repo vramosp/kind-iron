@@ -1,0 +1,27 @@
+type: object
+name: TextareaFormControl
+label: Textarea
+fields:
+  - type: string
+    name: name
+    label: Name
+  - type: string
+    name: label
+    label: Label
+    default: Description
+  - type: string
+    name: placeholder
+    label: Placeholder text
+    default: Please describe
+  - type: boolean
+    name: isRequired
+    label: Is the field required?
+  - type: enum
+    name: width
+    label: Width
+    options:
+      - label: Full
+        value: full
+      - label: 'One half'
+        value: '1/2'
+    default: full

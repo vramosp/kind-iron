@@ -1,0 +1,90 @@
+type: object
+name: HeroSection
+label: Hero section
+variantField: variant
+extends:
+  - Section
+groups:
+  - sectionComponent
+fields:
+  - type: enum
+    name: variant
+    label: Arrangement
+    controlType: thumbnails
+    options:
+      - label: Hero with feature on the right
+        value: variant-a
+        thumbnail: './images/HeroSection/Hero Section With Form on the Right.png'
+      - label: Hero with feature on the left
+        value: variant-b
+        thumbnail: './images/HeroSection/Hero Section With Image on the Right.png'
+      - label: Hero with feature at the top
+        value: variant-c
+        thumbnail: './images/HeroSection/Hero Section With Image at the Bottom.png'
+      - label: Hero with feature at the bottom
+        value: variant-d
+        thumbnail: './images/HeroSection/Hero Section With Form at the Bottom.png'
+    default: variant-a
+  - type: model
+    name: badge
+    label: Badge
+    models:
+      - Badge
+  - type: string
+    name: title
+    label: Title
+  - type: markdown
+    name: text
+    label: Text
+  - type: list
+    name: actions
+    label: Actions
+    items:
+      type: model
+      models:
+        - Button
+        - Link
+  - type: model
+    name: feature
+    label: Feature
+    models:
+      - FormBlock
+      - ImageBlock
+      - VideoBlock
+  - type: model
+    name: backgroundImage
+    label: Background image
+    models:
+      - ImageBlock
+default:
+    elementId: homepage-hero-1
+    variant: variant-a
+    colors: colors-f
+    width: wide
+    height: tall
+    bottomGap: none
+    topGap: none
+    contentWidth: large
+    contentAlignHoriz: center
+    contentAlignVert: middle
+    textAlign: left
+    title: This Is A Big Hero Headline
+    text: >-
+      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
+      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
+      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
+      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    actions:
+      - type: Button
+        label: Get Started
+        url: '/'
+        style: primary
+        elementId: hero-main-button
+      - type: Button
+        label: Learn More
+        url: '/'
+        style: secondary
+    feature:
+      type: ImageBlock
+      url: /images/hero.png
+      altText: Hero section image
