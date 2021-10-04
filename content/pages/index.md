@@ -51,8 +51,8 @@ sections:
     textAlign: center
     posts:
       - content/pages/blog/post-three.md
-      - content/pages/blog/post-two.md
       - content/pages/blog/post-one.md
+      - content/pages/blog/post-two.md
       - content/pages/postlayout-55mes4so8.md
   - type: TestimonialsSection
     variant: variant-b
