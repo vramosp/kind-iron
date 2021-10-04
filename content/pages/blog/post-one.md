@@ -2,12 +2,13 @@
 title: Post Title 1
 layout: PostLayout
 date: '2021-06-28'
-excerpt: |-
-  Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend.
+excerpt: >-
+  Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu,
+  eget egestas tortor pretium id. Sed imperdiet mattis.
 thumbImage:
   type: ImageBlock
-  url: "/images/post-1.jpeg"
-  altText: "Post image 1"
+  url: /images/post-1.jpeg
+  altText: Post image 1
 bottomSections:
   - type: CtaSection
     variant: variant-b
@@ -16,12 +17,13 @@ bottomSections:
     height: short
     textAlign: left
     title: Let's do this
-    text: |-
-      The Stackbit theme is flexible and scalable to every need. It can manage any layout and any screen.
+    text: >-
+      The Stackbit theme is flexible and scalable to every need. It can manage
+      any layout and any screen.
     actions:
       - type: Button
         label: Get Started
-        url: "/"
+        url: /
         style: primary
 ---
 
