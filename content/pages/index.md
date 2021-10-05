@@ -4,7 +4,7 @@ layout: PageLayout
 sections:
   - type: HeroSection
     elementId: homepage-hero-1
-    variant: variant-b
+    variant: variant-c
     colors: colors-f
     width: wide
     height: tall
